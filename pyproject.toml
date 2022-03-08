@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "netcup-dyndns"
+version = "0.1.0"
+description = "DynDNS with Netcup"
+authors = ["dadevel <dadevel@disroot.org>"]
+repository = "https://github.com/dadevel/netcup-dyndns"
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.scripts]
+netcup-dyndns = "netcupdyndns.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.31.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
